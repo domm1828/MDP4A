@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02</title>
+</head>
+<body>
+    <a href="#sectionGreen">GREEN</a>
+    <div id="sectionRed" style="height: 80vh; background-color: red;"></div>
+    <div id="sectionOrange" style="height: 80vh; background-color: orange;"></div>
+    <div id="sectionGreen" style="height: 80vh; background-color: green;"></div>
+    <!-- ETIQUETA DE ENLACE-->
+    <a href="https:\\w3.org" title="Ejemplo.." target="_blank">Enlace</a>
+    <a href="./archivo/HTML.pdf" target="_blank" title="PDF">PDF</a>
+    <a href="./archivo/Alin.xlsx">EXCEL</a>
+    <a href="./archivo/Processing.jpg">IMAGEN</a>
+    <!-- Enlaces Email -->
+    <a href="mailto:correo@gmail.com">Mail</a>
+    <!-- Enlaces Telfono-->
+    <a href="tel:+549111111">Telefono</a>
+    <!-- Enlaces de SECCION ANCLAS-->
+    <a href="#sectionRed">RED</a>
+    <a href="#sectionOrange">Orange</a>
+
+    <!-- IMAGENES -->
+    <img width="200" src="./archivo/Processing.jpg" title="" alt="texto alternativo">
+    <img width="200" alt="Texto.." src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Royal_Monogram_of_Joseph_I_of_Spain.svg/800px-Royal_Monogram_of_Joseph_I_of_Spain.svg.png">
+
+    <a href="https://wikimedia.org/">
+        <img width="200" src="./archivo/Processing.jpg">
+ texto... 
+        <img width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Royal_Monogram_of_Joseph_I_of_Spain.svg/800px-Royal_Monogram_of_Joseph_I_of_Spain.svg.png">
+    </a>
+
+    <!-- FORMULARIO -->
+    <form>
+        <!-- ETIQUETAS INPUT
+            TEXT -> texto
+            PASSWORD -> viñetas
+            FILE -> SUBIR ARCHIVO
+            DATE -> FECHA
+            NUMBER -> NUMERICO
+            RADIO -> SELECCION SIMPLE
+            CHECKBOX -> SELECCION MULTIPLE
+            HIDDEN -> OCULTOS
+            EMAIL -> CORREO ELECTRONICO
+            URL -> ENLACES
+        -->
+        <label for="name">Nombre:</label>
+        <input id="name" type="text" value="1" name="nombre" placeholder="Ingrese el nombre" required >
+        <br>
+        <label for="numbers">Number:</label>
+        <input id="numbers" type="number" name="numeros" min="" max="" >
+        <br>
+        <input type="password" placeholder="Ingrese clave">
+        <br>
+        <input type="file" accept=".docx,.pdf" multiple>
+        <br>
+        <input type="email" required>
+        <br>
+        <input type="date" min="2023-01-01" max="2023-05-31">
+        <br>
+        <input type="color" value="#FF0000">
+        <br>
+        <input type="range" min="1" max="10" step="0.01" >
+        <br>
+        <input type="hidden" value="1">
+        <br>
+        <input type="radio" value="1" name="selecione"><label>1</label>
+        <br>
+        <input type="radio" value="2" name="selecione" checked><label>2</label>
+        <br>
+        <input type="radio" value="3" name="selecione"><label>3</label>
+        <br>
+        <input type="checkbox" value="H" name="multiple"><label>H</label>
+        <br>
+        <input type="checkbox" value="I" name="multiple" checked><label>I</label>
+        <br>
+        <input type="checkbox" value="J" name="multiple"><label>J</label>
+        <br>
+        <input type="checkbox" value="L" name="multiple"><label>L</label>
+        <br>
+        <!--Lista desplegable SELECT-->
+        <select name="" required>
+            <option value="">SELECCIONE UN CAFE</option>
+            <optgroup label="CAFE BRASILEÑO">
+                <option value="1" >Uno</option>
+                <option value="2">DOS</option>
+            </optgroup>
+            <optgroup label="CAFE COLOMBIANO">
+                <option value="2">UNO</option>
+                <option value="2">DOS</option>
+            </optgroup>
+            <optgroup label="OTROS CAFE">
+                <option value="2">UNO</option>
+                <option value="2">DOS</option>
+            </optgroup>
+        </select>
+        <select multiple>
+            <option value="">......</option>
+            <option value="1">Uno</option>
+            <option value="2" selected>DOS</option>
+            <option value="2">DOS</option>
+            <option value="2">DOS</option>
+        </select>
+
+        <br>
+        <!-- TEXTAREA -->
+        <textarea name="" placeholder="Comentario" required></textarea>
+        <br>
+        <!-- BOTONES -->
+        <button type="submit">Enviar Información</button>
+        <br>
+        <button type="reset">Limpiar Formulario</button>
+        <br>
+        <button type="button">Acciones</button>
+
+    </form>
+
+</body>
+</html>

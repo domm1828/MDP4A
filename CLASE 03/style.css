@@ -1,0 +1,69 @@
+code {
+    font-size: 2em;
+    color: #AA0E43;
+    background-color: beige;
+}
+.claseUno{
+    color: red !important;
+}
+#claseUno{
+    font-size: 1em;
+    color:blue ;
+}
+[title]{
+    text-decoration: none;
+    color: green;
+}
+[title=titulo3]{
+    font-size: 3em;
+}
+/* comentario ... */
+/*
+Pseudo class - elementos
+: ... ::
+*/
+
+li:nth-child(even){
+    background-color: yellow;
+}
+li:nth-child(odd){
+    background-color: #cecece;
+}
+
+:nth-child(3){
+    background-color: greenyellow !important;
+}
+
+table{
+    width: 100%;
+}
+tr:nth-child(even){
+    background-color: #DDD;  
+}
+tr:nth-child(odd){
+    background-color: #FFF;  
+}
+tr:hover{
+    cursor: pointer;
+    border:3px solid #000000;
+}
+
+input:focus{
+    background-color: #000000;
+    color:white;
+}
+
+p::first-letter{
+    background-color: pink;
+    font-size: 50px;
+    color: red;
+    text-transform: uppercase;
+}
+
+p::before{
+    content: "prueba:";
+    text-decoration: underline;
+}
+p::after{
+    content: "....Ejemplo....";
+}

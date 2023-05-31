@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJA DE ESTILOS</title>
+  
+  <!-- <style>
+        code {
+            font-size: 2em;
+            color: #AA0E43;
+            background-color: beige;
+        }
+        .claseUno{
+            color: red !important;
+        }
+        #claseUno{
+            font-size: 1em;
+            color:blue ;
+        }
+        [title]{
+            text-decoration: none;
+            color: green;
+        }
+        [title=titulo3]{
+            font-size: 3em;
+        }
+
+    </style>
+    -->
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HOJAS DE ESTILOS -->
+    1.- FORMA INLINE  (se utiliza dentro de las etiquetas de html atributo style). <br>
+    2.- FORMA DENTRO DEL DOCUMENTO ( se declara dentro de la head => style ). <br>
+    3.- FORMA DOCUMENTO A PARTE (hojaEstilo.css) LINK AL DOCUMENTO DE HTML. <br>
+    <!-- COMO CREAMOS LOS SELECTORES-->
+    <!-- selectores clase => class -->
+    <code id="claseUno" class="claseUno">
+        .nombreClass{
+            atributo:valor;
+            atributo:valor;
+            atributo:valor;
+        }
+    </code> <br> <br>
+    <!-- selectores Id => id -->
+    <code>
+        #nombreClass{
+            atributo:valor;
+            atributo:valor;
+        }
+    </code> <br> <br>
+    <!-- SELECTORES DE ELEMENTOS(ETIQUETAS) -->
+    <code>
+        p{
+            atributo:valor;
+            atributo:valor;
+        }
+    </code> <br><br>
+
+    <div style="color:red;background-color: black;"> prueba... </div>
+
+    <!--FORMATOS DE COLORES -->
+    INGLES - RGB (ROJO, VERDE, AZUL ) => 0 -255 
+    HEX #RRGGBB => 0-9 A-F  RGBA(ROJO, VERDE, AZUL, ALPHA) ALPHA=>0 - 1
+    <br>
+
+    <p style="color:rgb(2,255,0);">title pruebass...</p>
+    <p style="background-color: #AA0E43;">title PRUBEA....</p>
+    <p style="color:rgb(2,255,0,1); font-size: 20px;">title pruebass...</p>
+
+    <a href="https://google.com" title="titulo"> enlace </a>
+    <a href="https://google.com" title="titulo2"> enlace2 </a>
+    <a href="https://google.com" title="titulo3"> enlace3 </a>
+
+    <br>
+
+    <ol>
+        <li>uno ... </li>
+        <li>dos ... </li>
+        <li>tres ... </li>
+        <li>cuatro ... </li>
+        <li>cinco ... </li>
+    </ol>    <br>    <br>
+
+    <table>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+        <tr><td>1</td><td>2</td></tr>
+    </table>
+    <br>
+    <input>
+    <br>
+    <br>    <br>
+    <!--UNIDADES DE MEDIDAS LOGINTUDES -->
+    <!-- ABSOLUTAS -->
+    cm => centimetros 
+    mm => milimetros
+    in => pulgadas
+    px => pixeles
+    pt => points
+    <!-- RELATIVAS -->
+    vw => viewports width
+    vh => viewports height
+    % 
+    em, rem => fuentes 
+    
+</body>
+</html>
