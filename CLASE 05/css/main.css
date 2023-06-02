@@ -1,0 +1,187 @@
+@font-face{
+    font-family: 'Cutive';
+    src: url(./fonts/CutiveMono-Regular.ttf);
+}
+@font-face {
+    font-family: 'Orange';
+    src: url(./fonts/orangejuice.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background-color: #ddd;
+    border: 2px dotted red;
+}
+.skill{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    padding-right: 10px;
+}
+.html{
+    width: 90%;
+    background-color: #04AA6D;
+}
+.php{
+    width: 40%;
+    background-color: red;
+}
+.wordpress{
+    width: 30%;
+    background-color: blue;
+}
+.bars{
+    width: 100%;
+}
+.title{
+    font-family: 'Orange';
+    font: 20px;
+}
+.card{
+    margin: auto;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(244, 0, 251, 0.3);
+}
+.card img{
+    max-width: 100%;
+    border-bottom: 2px solid #000000;
+    box-shadow: 0 4px 8px 0 rgba(244, 0, 251, 0.3);
+}
+.card p, .card a, .card button{
+    font-family: 'Cutive';
+}
+.card a{
+    text-decoration: none;
+    color: black; padding-right: 10px;
+}
+.card button{
+    width: 100%;
+    padding: 10px;
+    border:none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.card button:hover, .card a:hover{
+    opacity: 0.7; 
+}
+.flotante{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.parrafo p{
+    border: 1px solid #000000;
+    outline-color: red;
+    outline-width: 10px;
+    margin: 30px;
+}
+p.dotted{
+    outline-style: dotted;
+}
+p.solid{
+    outline-style: solid;
+}
+p.dashed{
+    outline-style: dashed; 
+}
+p.double{
+    outline-style: double; 
+}
+p.ridge{
+    outline-style: ridge; 
+}
+p.inset{
+    outline-style: inset; 
+}
+p.outset{
+    outline-style: outset; 
+} 
+.note{
+    margin-bottom: 15px;
+    padding: 4px 12px;
+    border-radius: 5px;
+}
+.note.danger{
+    background-color: #ffdddd;
+    border-left: 8px solid #f44336;
+}
+
+.note.warning{
+    background-color: #e3cd5e;
+    border-left: 8px solid orange;
+}
+.note.success{
+    background-color: #ddffdd;
+    border-left: 8px solid #04AA6D;
+}
+
+.note.info{
+    background-color: #79a3e8;
+    border-left: 8px solid #2a06dd;
+}
+
+.card a i{
+    font-size: 30px;
+    color: red;
+}
+.scroll{
+    overflow: auto;
+    height: 200px; 
+}
+.scroll::-webkit-scrollbar{
+    width: 15px;
+}
+.scroll::-webkit-scrollbar-track{
+    background-color: orange;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 20px;
+    border: 3px solid blue;
+}
+.tooltip{
+    display: inline-block;
+    border-bottom: 1px dotted black ;
+    position: relative;
+}
+.tooltip .tooltipText{
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    padding: 5px 0px;
+    opacity: 0;
+    transition: opacity 3s;
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    bottom: 120%;
+    margin-left: -60px;
+    text-align: center;
+    color: white;
+}
+.tooltip:hover .tooltipText{
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip .tooltipText::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #555 #f44336 #000000 #79a3e8;
+}
+.card .tooltip{
+    display: inline-block;
+    border-bottom:none ;
+    position: relative;
+}
