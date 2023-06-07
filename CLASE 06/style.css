@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a:link{
+    color: #FF0000;
+}
+a:visited{
+    color: #00FF00;
+}
+a:hover{
+    color: #FF00FF;
+}
+a:active{
+    color: #0000FF;
+}
+.ejemploHover:hover{
+    color: red;
+    font-size: 40px;
+}
+
+input:focus{
+    background-color: #0000FF;
+}
+input:required{
+    border: 2px solid #FF0000;
+}
+input:valid{
+    border:2px solid green;
+}
+input:invalid{
+    background-color: black;
+    color: white;
+}
+input:disabled{
+    background-color: aliceblue;
+    color: black;
+    border: 1px dotted #0000FF;
+}
+input:read-only{
+    border: 1px dotted #0000FF;
+}
+.p1::first-line{
+    color: red;
+}
+p::first-letter{
+    color: #FF00FF;
+    font-size: 50px;
+}
+.p1::after{
+    content: "hola.. ";
+}
+.p1::before{
+    content: " prueba...";
+}
+
+/*POSICIONES RELATIVE - ABOSLUTE - (FIXED-STICKY) */
+
+.containt{
+    position: relative;
+    /*
+    top
+    left
+    right
+    bottom
+    */
+    border: 2px dotted black;
+    width: 500px;
+    height: 200px;
+}
+.containt div{
+ width: 100px;
+ height: 50px;
+ font-size: 20px;
+}
+.containt div.a{
+    position: absolute;
+    background-color: #00FF00;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+.containt div.b{
+    background-color: #FF0000;
+    
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0px auto;
+
+    position: absolute;
+    z-index: 1;
+}
+.header{
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    background-color: yellowgreen;
+    z-index: 999;
+}
+
+.ejemplo{
+    padding-bottom: 450px;
+}
+.ws{
+    width: 30px ;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.back-uno{
+    background: url(./fondo.jpg);
+    height: 200px;
+    width: 100%;
+    background-size: 100% 100%; 
+    position: relative;
+    z-index: 1; 
+    filter: sepia(60%)
+}
+.back-text{
+    padding: 80px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    z-index: 12;
+}
+.back-uno::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+}
