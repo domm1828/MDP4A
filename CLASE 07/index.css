@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container{
+    display: flex;
+    background-color: black;
+    height: 50vh;
+    color: white;
+    /*DIRECTION para indicar la direccion de los items
+    row => horizantalmente izquierda a derecha
+    row-reverse => horizontalmente derecha a izquierda
+    column => verticalmente arriba - abajo
+    column=> verticalmente abajo - arriba
+    flex-direction: column-reverse;
+    */
+    /*AJUSTE DE LINEA
+    nowrap => una sola linea
+    wrap => los elementos se colocan en varias lineas si no cabe en una sola
+    wrap-reverse  => los elementos se colocan en varias lineas si no cabe en una sola abajo - arriba
+    flex-wrap: wrap-reverse;
+    */
+    /* flex-flow: column nowrap ;*/
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+.flex-container div{
+    background-color: blue;
+    width: 200px;
+    height: 20vh;
+    margin: 10px;
+}
+.itemFourt{
+    align-self: center;
+    background-color: red !important;
+    order:1;
+ 
+}
+.itemThree{
+    
+    background-color: rgb(51, 255, 0) !important;
+    order:2;
+}
+
+.containerA{
+    background-color: black;
+    display: flex;
+    height: 20vh;
+}
+.containerA .itemA{
+    margin: 10px;
+    border: 1px solid white;
+    background-color: red;
+    width: 30%;
+}
+.containerA .itemB{
+    width: 70%;
+    margin: 10px;
+    border: 1px solid white;
+    background-color: red;
+
+}
+.containerB{
+    background-color: black;
+    display: flex; 
+    min-height: 80vh;
+}
+.containerB .itemA{
+    background-color: red;
+    width: 40%;
+    margin: 10px;
+}
+.containerB .itemB{
+    background-color: red;
+    width: 60%;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.containerB .itemB div{
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    background-color: black;
+}
+
+.rotate{
+    background-color: orange!important;
+    transform: skew(20deg,10deg);
+    transition: transform 10s;
+}
+.rotate:hover{
+    transform: rotate(20deg);
+    background-color: aqua!important;
+}
+.scale{
+    color: white;
+    text-align: center;
+    transform: scale(2,0.8);
+}
+.translate:hover{
+    background-color: aqua!important;
+    transform: translate(50px,100px);
+}
+.rotateX{
+   transition: width 4s, height 6s;
+}
+.rotateX:hover{
+    width: 300px !important;
+    height: 200px !important;
+}
+
+.animation{
+    animation-name: nombreAnimacion;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+/*
+@keyframes nombreAnimacion{
+    from { background-color: blue;}
+    to { background-color: orange;}
+}*/
+@keyframes nombreAnimacion{
+    0% { background-color: blue; left: 0px; top:0px;}
+    25% { background-color: rgb(42, 200, 95); left: 200px; top:0px;}
+    50% { background-color: rgb(172, 119, 21); left: 200px; top:200px;}
+    75% { background-color: rgb(98, 12, 197); left: 0px; top:200px;}
+    100% { background-color: rgb(103, 99, 91); left: 0px; top:0px;}
+  
+}
