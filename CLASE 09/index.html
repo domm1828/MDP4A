@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="./index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form class="formulario">
+        <div class="input">
+            <label>Nombres Completo</label>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Nombres" required name="nombre">
+        </div>
+        <div class="input">
+            <label>Email</label>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email" required name="email">
+        </div>
+        <div class="input">
+            <label>Telefono</label>
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" placeholder="Telefono" required name="telefono">
+        </div>
+
+        <div class="input">
+            <label>Password</label>
+  
+            <i class="fa-solid fa-eye" onclick="mostrarPassword()" id="icon-passsword"></i>
+            <input type="password" id="password" placeholder="Contraseña" required name="clave">
+        </div>
+         <button type="submit" class="boton">Enviar</button>
+    </form>
+    
+    <script>
+        function mostrarPassword(){
+            var tipo = document.getElementById('password');
+            var icon =document.getElementById('icon-passsword'); 
+            if(tipo.type =='password'){
+                tipo.type ="text";
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            }
+            else{
+                tipo.type ="password";
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        }
+    </script>
+</body>
+</html>
