@@ -120,3 +120,29 @@ footer section p {
     text-align: right;
     padding-bottom: 3px;
 }
+
+@media (max-width:576px) {
+    main,aside,footer{
+        width: 100%;
+    }
+    main{
+        background-color: #CECECE;
+    }
+    main section p , main section h2{
+        color: black;
+    }
+    main section p{
+        font-size: 18px;
+    }
+    header nav{
+        display: none;
+    }
+}
+@media (min-width:577px) and (max-width:768px) {
+    main,aside,footer{
+        width: 100%;
+    }
+    .card{
+        width: 50%;
+    }
+}

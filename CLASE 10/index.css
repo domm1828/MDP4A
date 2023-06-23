@@ -1,0 +1,88 @@
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width:16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+[class*="col-"]{
+
+    background-color: brown;
+    border: 2px double #000;
+    margin: 10px;
+    height: 200px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*MEDIA QUERY 
+LA REGLA @media
+
+@media codicion{
+
+}
+@media (codicion) and (condicion){
+
+}
+Tipos de Medios @media
+
+all => todos los dipositivos o medios
+screen => monitores o pantallas
+print => pantallas de previsualizacion de impresion
+
+*/
+
+@media print{
+    .col-1{
+        display: none;
+    }
+    [class*="col-"]{
+        background-color: bisque;
+    }
+}
+/*CONDICION 
+@media (codicion)
+Tipos =>
+width
+max-width
+min-width
+orientation => landscape | portrait
+height
+max-height
+min-height
+
+*/
+
+@media (min-width:300px) and (max-width:500px){
+
+    [class*="col-"]{
+        background-color: rgb(227, 130, 13);
+        width: 95%;
+    }
+}
+@media (min-width:501px) and (max-width:800px){
+    [class*="col-"]{
+        background-color: rgb(112, 141, 125);
+        width: 45%;
+    }
+}
+
+/*BREAKPOINTS PUNTOS DE INTERRUCCIONES
+
+Extra Small < 576px
+Small >=576px
+Medium >=768px
+Large >=992px
+Extra Large >= 1200px
+Extra extra Large >= 1400px
+
+*/
