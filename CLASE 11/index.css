@@ -1,0 +1,11 @@
+.container{
+    background-color: brown;
+    height: 100px; 
+}
+
+.text-primary{
+    color: brown !important;
+}
+.bg-color{
+    background-color: #e3f2fd;
+}
