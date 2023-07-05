@@ -1,0 +1,43 @@
+#carouselExampleIndicators .carousel-indicators button{
+    border-radius: 100%;
+    width: 15px!important;
+    height: 15px !important;
+    background-color: orange!important;
+}
+#carouselExampleIndicators .carousel-item img{
+    height: 90vh;
+}
+.cardModalButton, .cardModalButton img{
+    height: 45vh;
+    cursor: pointer;
+}
+.cardModalButton:hover img{
+    opacity: 0.6;
+    background-color: black;
+}
+.cardModalButton:hover > a.btn{
+    display: inline-block !important;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 50%;
+
+}
+.modalIndicators a.active{
+    border: 2px solid;
+}
+.iconosRedes{
+    background-color: brown;
+    border-radius: 0px 10px 10px 0px;
+    top: 25%;
+}
+.iconosRedes ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.iconosRedes ul li { 
+    padding: 10px; 
+    color: white;
+    
+}
